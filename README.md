@@ -2,7 +2,7 @@
 
 Use the pretrained network 'MonkeyMRIWeigths_PostTraining.hdf5' with BEN  (paper: https://elifesciences.org/articles/81217)
 
-
+**Diffusion MRI Paper Under Review title "In vivo submillimeter diffusion MRI dataset of 9 macaque brains curated for tractography"**
 
 
 # Retraining the Network Workflow: DICOM to NIfTI, Denoising, Mask Generation, and Training
