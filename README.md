@@ -1,8 +1,11 @@
 # Pretrained network for 9 macaca fasicularis Brain extraction from MRI
 
+Use the pretrained network 'MonkeyMRIWeigths_PostTraining.hdf5' with BEN  (paper: https://elifesciences.org/articles/81217)
 
 
-# MRI Processing Workflow: DICOM to NIfTI, Denoising, Mask Generation, and Training
+
+
+# Retraining the Network Workflow: DICOM to NIfTI, Denoising, Mask Generation, and Training
 This guide outlines the steps for processing MRI data, including converting DICOM files into NIfTI format, denoising MRI images, generating brain masks using BEN (Brain Extraction Net), training the network, and refining segmentation results. The tools used include ITK SNAP, Matlab, Python, and BEN.
 ## Steps:
 1. Convert DICOM Files to NIfTI Format
@@ -60,14 +63,17 @@ python BEN_infer.py -i Data_Complete\Input_RAW_Denoised -o Data_Complete\Masks_N
 
 ## Tools Used:
 1. MRIDenoisingPackage_MATLAB
-A Matlab-based tool for denoising MRI data.
-MRIDenoisingPackage_MATLAB
+A Matlab-based tool for denoising MRI data. 
+MRIDenoisingPackage_MATLAB (https://sites.google.com/site/pierrickcoupe/softwares/denoising/mri-denoising/mri-denoising-software?authuser=0)
+
 2. ITK SNAP
 A tool for segmentation and visualization of 3D medical images.
-ITK SNAP
+ITK SNAP (http://www.itksnap.org/pmwiki/pmwiki.php)
+
 3. BEN (Brain Extraction Net)
 A generalized brain extraction network for multimodal MRI data from rodents, nonhuman primates, and humans.
-BEN GitHub Repository
+BEN GitHub Repository (https://github.com/yu02019/BEN)
+
 4. Anaconda Backup Environment
 The environment backup for the BEN system is saved in the BEN_Environment_Backup.yaml file.
 
